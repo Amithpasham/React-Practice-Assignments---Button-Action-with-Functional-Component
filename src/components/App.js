@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(false);
     return (
       <div id="main">
-       {count==true?<p id="para">"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>:<p id="para"></p>}
+       count==true?<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>:""
   
       <button id="click" onClick={() => setCount(true)}>click
       </button>
