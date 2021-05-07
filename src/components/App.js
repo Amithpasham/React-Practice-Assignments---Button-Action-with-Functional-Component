@@ -1,11 +1,12 @@
 import React, {Component, useState} from "react";
 import "./../styles/App.css";
 function App() {
-  const [count, setCount] = useState("");
+  const [count, setCount] = useState(false);
     return (
       <div id="main">
-        <p id="para">{count}</p>
-      <button id="click" onClick={() => setCount("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy")}>click
+       {count==true?<p id="para">"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>:<p id="para"></p>}
+  
+      <button id="click" onClick={() => setCount(true)}>click
       </button>
       </div>
     );
